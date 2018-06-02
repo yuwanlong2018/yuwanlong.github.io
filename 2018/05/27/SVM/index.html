@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="塞巴斯万隆是我的网名，博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com">
+<meta name="description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。 $f(x) = $">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SVM">
+<meta property="og:title" content="浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结">
 <meta property="og:url" content="http://yoursite.com/2018/05/27/SVM/index.html">
 <meta property="og:site_name" content="塞巴斯万隆">
-<meta property="og:description" content="塞巴斯万隆是我的网名，博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com">
+<meta property="og:description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。 $f(x) = $">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-27T12:53:41.861Z">
+<meta property="og:updated_time" content="2018-06-02T03:39:22.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SVM">
-<meta name="twitter:description" content="塞巴斯万隆是我的网名，博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com">
+<meta name="twitter:title" content="浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结">
+<meta name="twitter:description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。 $f(x) = $">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>SVM | 塞巴斯万隆</title>
+  <title>浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结 | 塞巴斯万隆</title>
   
 
 
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">SVM</h1>
+          <h1 class="post-title" itemprop="name headline">浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结</h1>
         
 
         <div class="post-meta">
@@ -299,7 +299,10 @@
       
 
       
-        
+        <h1 id="ID3"><a href="#ID3" class="headerlink" title="ID3"></a><strong><em>ID3</em></strong></h1><h2 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h2><hr>
+<p>决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。</p>
+<p>$f(x) = $</p>
+
       
     </div>
     
@@ -367,8 +370,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -410,6 +422,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ID3"><span class="nav-number">1.</span> <span class="nav-text">ID3</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#算法思想"><span class="nav-number">1.1.</span> <span class="nav-text">算法思想</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
