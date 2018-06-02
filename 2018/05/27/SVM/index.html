@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。 $f(x) = $">
+<meta name="description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结">
 <meta property="og:url" content="http://yoursite.com/2018/05/27/SVM/index.html">
 <meta property="og:site_name" content="塞巴斯万隆">
-<meta property="og:description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。 $f(x) = $">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-06-02T03:39:22.921Z">
+<meta property="og:description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-06-02T11:24:33.533Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结">
-<meta name="twitter:description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。 $f(x) = $">
+<meta name="twitter:description" content="ID3算法思想 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。">
 
 
 
@@ -97,9 +97,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -137,7 +137,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -160,7 +160,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">支持向量机</p>
+        <p class="site-subtitle">学习笔记</p>
       
   </div>
 
@@ -190,12 +190,52 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-机器学习">
+          <a href="/categories/机器学习" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
-            Archives
+            机器学习
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-深度学习">
+          <a href="/categories/深度学习" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            深度学习
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-数据挖掘">
+          <a href="/categories/数据挖掘" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            数据挖掘
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-比赛">
+          <a href="/categories/比赛" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            比赛
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-编程">
+          <a href="/categories/编程" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            编程
           </a>
         </li>
       
@@ -272,6 +312,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -301,7 +363,6 @@
       
         <h1 id="ID3"><a href="#ID3" class="headerlink" title="ID3"></a><strong><em>ID3</em></strong></h1><h2 id="算法思想"><a href="#算法思想" class="headerlink" title="算法思想"></a>算法思想</h2><hr>
 <p>决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别。</p>
-<p>$f(x) = $</p>
 
       
     </div>
@@ -385,7 +446,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">万隆</p>
-              <p class="site-description motion-element" itemprop="description">塞巴斯万隆是我的网名，博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com</p>
+              <p class="site-description motion-element" itemprop="description">博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -393,7 +454,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">posts</span>
@@ -401,6 +462,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
             
 
             
@@ -441,6 +511,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -470,7 +547,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -487,11 +564,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
