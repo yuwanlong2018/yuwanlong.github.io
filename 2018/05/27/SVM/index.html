@@ -81,16 +81,16 @@
 
 <meta name="description" content="决策树 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别，从分类的角度，分类树其叶子节点确实是存放一种类别，从回归的角度，回归树其叶子节点内所有的样本回归值都是一样的，也可以理解为存放一种类别。   首先第一个问题：什么是决">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结">
+<meta property="og:title" content="浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结">
 <meta property="og:url" content="http://yoursite.com/2018/05/27/SVM/index.html">
 <meta property="og:site_name" content="塞巴斯万隆">
 <meta property="og:description" content="决策树 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别，从分类的角度，分类树其叶子节点确实是存放一种类别，从回归的角度，回归树其叶子节点内所有的样本回归值都是一样的，也可以理解为存放一种类别。   首先第一个问题：什么是决">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/assets/决策树_wo4ma4fya.png">
 <meta property="og:image" content="http://yoursite.com/assets/单节点.png">
-<meta property="og:updated_time" content="2018-06-03T07:51:41.196Z">
+<meta property="og:updated_time" content="2018-06-03T10:36:19.674Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结">
+<meta name="twitter:title" content="浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结">
 <meta name="twitter:description" content="决策树 决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别，从分类的角度，分类树其叶子节点确实是存放一种类别，从回归的角度，回归树其叶子节点内所有的样本回归值都是一样的，也可以理解为存放一种类别。   首先第一个问题：什么是决">
 <meta name="twitter:image" content="http://yoursite.com/assets/决策树_wo4ma4fya.png">
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结 | 塞巴斯万隆</title>
+  <title>浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结 | 塞巴斯万隆</title>
   
 
 
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浅谈ID3、C4.5、CART、RF、Bagging、Boosting、Adaboost、GBDT、XGBoost算法总结</h1>
+          <h1 class="post-title" itemprop="name headline">浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结</h1>
         
 
         <div class="post-meta">
@@ -392,6 +392,7 @@
 <h1 id="ID3"><a href="#ID3" class="headerlink" title="ID3"></a><strong>ID3</strong></h1><hr>
 <p>既然希望划分之后（分裂后）结点的“纯度”越来越高，那么在ID3算法中如何度量纯度呢？<br><strong>“信息熵”</strong> 是度量样本集合不确定度（纯度）最常用的一直指标</p>
 <p><strong>问：</strong> 什么是信息熵？<br>先抛出信息熵的公式如下：</p>
+<p>$H(x) = -\displaystyle\sum_{i=1}^np(x_i)logp(x_i)$</p>
 </font>
       
     </div>
