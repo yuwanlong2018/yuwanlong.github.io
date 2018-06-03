@@ -79,17 +79,20 @@
 
 
 
-<meta name="description" content="前言塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com SVM">
+<meta name="description" content="前言塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com 人工智能的发展得益于云计算和大数据技术的成熟和普及，和人工智能相关的还有两个词汇—机器学习和深度学习，所谓的人工智能，通俗地讲是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="浅谈SVM算法总结">
-<meta property="og:url" content="http://yoursite.com/2018/05/27/SVM/index.html">
+<meta property="og:title" content="浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结">
+<meta property="og:url" content="http://yoursite.com/2018/06/04/浅谈ID3、C4-5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结/index.html">
 <meta property="og:site_name" content="塞巴斯万隆">
-<meta property="og:description" content="前言塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com SVM">
+<meta property="og:description" content="前言塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com 人工智能的发展得益于云计算和大数据技术的成熟和普及，和人工智能相关的还有两个词汇—机器学习和深度学习，所谓的人工智能，通俗地讲是">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-06-03T16:12:25.384Z">
+<meta property="og:image" content="http://yoursite.com/assets/决策树_wo4ma4fya.png">
+<meta property="og:image" content="http://yoursite.com/assets/单节点.png">
+<meta property="og:updated_time" content="2018-06-03T16:13:37.180Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="浅谈SVM算法总结">
-<meta name="twitter:description" content="前言塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com SVM">
+<meta name="twitter:title" content="浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结">
+<meta name="twitter:description" content="前言塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：yuwanlong2018@163.com 人工智能的发展得益于云计算和大数据技术的成熟和普及，和人工智能相关的还有两个词汇—机器学习和深度学习，所谓的人工智能，通俗地讲是">
+<meta name="twitter:image" content="http://yoursite.com/assets/决策树_wo4ma4fya.png">
 
 
 
@@ -119,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/27/SVM/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/04/浅谈ID3、C4-5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结/"/>
 
 
 
 
 
-  <title>浅谈SVM算法总结 | 塞巴斯万隆</title>
+  <title>浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结 | 塞巴斯万隆</title>
   
 
 
@@ -272,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/SVM/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/04/浅谈ID3、C4-5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="万隆">
@@ -289,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">浅谈SVM算法总结</h1>
+          <h1 class="post-title" itemprop="name headline">浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结</h1>
         
 
         <div class="post-meta">
@@ -301,8 +304,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-27T20:53:41+08:00">
-                2018-05-27
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-04T00:08:38+08:00">
+                2018-06-04
               </time>
             
 
@@ -364,7 +367,35 @@
         <font size="4" face="微软雅黑">
 
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h1><p>塞巴斯万隆是我的网名，该博客记录一些机器学习、深度学习、数据挖掘、编程语言相关的文章，主要是个人的学习笔记，大多数是算法的原理，以及个人见解，我学历尚浅，文章难免会有错误，如您发现，请邮件告知，同时也欢迎与我交流，邮箱：<a href="mailto:yuwanlong2018@163.com" target="_blank" rel="noopener">yuwanlong2018@163.com</a></p>
-<h1 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a><strong>SVM</strong></h1></font>
+<p>人工智能的发展得益于云计算和大数据技术的成熟和普及，和人工智能相关的还有两个词汇—机器学习和深度学习，所谓的人工智能，通俗地讲是指人工制造出来的系统所表现出来的智能；而且机器学习只是人工智能的一个分支，很多时候机器学习几乎成为人工智能的代名词，机器学习简单来讲就是通过算法，使机器能从大量历史数据中学习规律，从而对新的样本做出智能识别或对未来做预测；深度学习是机器学习中一个新领域。之所以称之为“深度”，是因为前面说的机器学习是浅层的学习，主要基于概率统计、矩阵或图模型而得出的分析结论，深度学习的概念源于人工神经网络的研究，它基于神经网络框架，通过模拟人脑学习的方式来处理数据，在实践中，数据是载体和基础，智能是追求的目标，而机器学习则是从数据通往智能的技术桥梁。</p>
+<h1 id="决策树"><a href="#决策树" class="headerlink" title="决策树"></a><strong>决策树</strong></h1><hr>
+<p>决策树（decision tree）是一种基本的分类与回归方法，决策树模型呈树形结构（可以是二叉树或非二叉树），其每个非叶节点表示一个特征属性上的测试，每个分支代表这个特征属性在某个值域上的输出，而每个叶节点存放一种类别，从分类的角度，分类树其叶子节点确实是存放一种类别，从回归的角度，回归树其叶子节点内所有的样本回归值都是一样的，也可以理解为存放一种类别。</p>
+<blockquote>
+<p> <strong>问：什么是决策树？</strong></p>
+</blockquote>
+<p><img src="/assets/决策树_wo4ma4fya.png" alt="决策树"></p>
+<ul>
+<li>上图是决策树的示意图，图中圆和方框分别表示内部节点和叶节点,从图中观察决策树，第一，决策树模型确实呈树形结构；第二，内部节点可进行分裂，图中决策树首先是从根节点进行分裂得到一棵深度为1的二叉树（也可以是深度为1的多叉树，这里不做过多讨论），随后每个节点都进行同样的分裂，最后所有分裂结束呈树形结构，那么问题来了，<strong>为什么要进行分裂呢？</strong></li>
+</ul>
+<p><strong>问: 树模型触及到最多的点是进行分裂，那么分裂的本质意义是什么？</strong></p>
+<p><strong>一次分析：</strong> 从根节点到最终分裂完成到最后的多个叶节点经历了大量的分裂，我们观察到都是每一个内部节点进行裂变的过程，可以理解为单个节点进行裂变，生成的子节点也同样进行裂变，最后构成了整颗决策树，下面看看单个节点的分裂。</p>
+<p><img src="/assets/单节点.png" alt="单节点"></p>
+<ul>
+<li>可以理解为就是由多个上图（深度为1的二叉树）构成了整颗决策树，那么问题缩小到了单个节点进行分裂，还是没有回答为什么要进行分裂的问题？</li>
+</ul>
+<p><strong>二次分析：</strong> 以分类树为例，学习一个算法需知其目标函数的由来，<strong>决策树的目标函数是什么？</strong>，分裂的意义是使得各个子数据集有一个最好的分类，单节点分裂的目标是使得该节点总体样本的不纯度降低，不纯度这里引入信息熵的概念，信息熵后续会详解，<strong>可得知单次分裂的本质意义：使得样本的不纯度降低，决策树是由多次分裂构成，这里决策树引入贪心算法，每一次分裂都找出当前条件下的最优解，最后构成了整棵决策树。</strong></p>
+<blockquote>
+<p><strong>贪心算法：</strong> 每一阶段做决策都找出当前条件下的最优解。当然这个问题，这种解法的正确性显而易见，贪心类的问题最难的地方在于正确性无法证明。这个先不管。毕竟不是在做算法研究，我们只要能用贪心去解决具体的编程问题就行了。</p>
+</blockquote>
+<blockquote>
+<p><strong>浅谈树原理：</strong>  决策树在于其每一阶段做决策都找出当前条件下的最优解，最后引入贪心算法，每一次分裂都找出当前条件下的最优解，最后构成了整棵决策树，李航教授统计学习方法划分为：特征的选择（分裂）、树的生成以及决策树的修剪（防止过拟合）。</p>
+</blockquote>
+<p><strong>三次分析：</strong> 上述浅谈了决策树的算法原理，决策树学习的关键是如何选择最优划分属性，一般而言，随着划分过程不断进行，我们希望决策树的分支结点所包含的样本尽可能属于同一类别，即结点的“纯度”越来越高，那么“纯度”的度量方法的不同，也就导致了学习算法的不同<strong>那么如何定义样本的不纯度？</strong></p>
+<h1 id="ID3"><a href="#ID3" class="headerlink" title="ID3"></a><strong>ID3</strong></h1><hr>
+<p>既然希望划分之后（分裂后）结点的“纯度”越来越高，那么在ID3算法中如何度量纯度呢？<br><strong>“信息熵”</strong> 是度量样本集合不确定度（纯度）最常用的一直指标</p>
+<p><strong>问：</strong> 什么是信息熵？<br>先抛出信息熵的公式如下：</p>
+<p>$H(x) = -\displaystyle\sum_{i=1}^np(x_i)logp(x_i)$</p>
+</font>
       
     </div>
     
@@ -388,15 +419,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/27/SVM/" rel="next" title="浅谈SVM算法总结">
+                <i class="fa fa-chevron-left"></i> 浅谈SVM算法总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/04/浅谈ID3、C4-5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结/" rel="prev" title="浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结">
-                浅谈ID3、C4.5、CART、Bagging、RF、Boosting、Adaboost、GBDT、XGBoost算法总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -519,7 +550,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SVM"><span class="nav-number">2.</span> <span class="nav-text">SVM</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#决策树"><span class="nav-number">2.</span> <span class="nav-text">决策树</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ID3"><span class="nav-number">3.</span> <span class="nav-text">ID3</span></a></li></ol></div>
             
 
           </div>
